@@ -94,7 +94,6 @@ public class PhoneNumberVerifier extends Service {
 
         prefs = new PrefsHelper(this);
         smsRetrieverClient = SmsRetriever.getClient(this);
-        Task<Void> task = smsRetrieverClient.startSmsRetriever();
 
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction(SmsRetriever.SMS_RETRIEVED_ACTION);
